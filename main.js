@@ -97,7 +97,7 @@ q(".page-"+page).appendChild(c);
 
 l(c, "click", (e)=>{
 e.preventDefault();
-location="?page="+i;
+location="?page="+(i+1);
 })
 
 }
