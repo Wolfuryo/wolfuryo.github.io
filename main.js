@@ -14,11 +14,11 @@ let u, v, message=q(".message"), button=q(".button"), url=q("[name='url']"), mes
 let ifr=q("iframe");
 let update=()=>{
 v=url.value;
-if(!url.value.startsWith("http")) v="http://www."+url.value;
+if(!url.value.startsWith("http")) v="https://www."+url.value;
 if(ifr.getAttribute("src")!=v) ifr.setAttribute("src", v);
 message.innerHTML=mess.value;
 u=link.value;
-if(!link.value.startsWith("http")) u="http://www."+link.value;
+if(!link.value.startsWith("http")) u="https://www."+link.value;
 button.setAttribute("href", u);
 button.innerHTML=text.value;
 }
